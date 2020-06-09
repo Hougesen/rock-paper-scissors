@@ -7,9 +7,50 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" defer>
+
 </head>
 
 <body>
+
+    <h1>Rock Paper Scissors</h1>
+
+    <section>
+        <h2>Pick your play:</h2>
+        <button id="rock" onclick="buttonGame(1, computerSelection)"><i class="far fa-hand-rock fa-5x"></i></button>
+
+        <button id="paper" onclick="buttonGame(2, computerSelection)"><i class="far fa-hand-paper fa-5x"></i></button>
+
+        <button id="scissors" onclick="buttonGame(3, computerSelection)"><i
+                class="far fa-hand-scissors fa-5x"></i></button>
+    </section>
+
+    <section>
+        <h2>Score</h2>
+        <div class="scoreSystem">
+            <p>Player:</p>
+            <p class="playerScore">0</p>
+        </div>
+        <div class="scoreSystem">
+            <p>Computer:</p>
+            <p class="computerScore">0</p>
+        </div>
+        <div class="scoreSystem">
+            <p>Tie:</p>
+            <p class="tieScore">0</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>History</h2>
+        <ul id="history">
+
+        </ul>
+    </section>
+
 
 </body>
 

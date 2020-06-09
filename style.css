@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* CSS Document */
+* {
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+section {
+    margin-top: 5%;
+}
+
+.scoreSystem {
+    display: inline-flex;
+}
+
+button {
+    height: 20vh;
+    width: 20vw;
+}
