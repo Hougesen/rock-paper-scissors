@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="scripts.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      defer
+    />
+  </head>
 
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" defer>
-
-</head>
-
-<body>
-
+  <body>
     <h1>Rock Paper Scissors</h1>
     <a href="https://mhouge.dk" target="_blank">mhouge.dk</a>
 
     <section>
-        <h2>Pick your play:</h2>
-        <button id="rock" onclick="buttonGame(1, computerSelection)"><i class="far fa-hand-rock fa-5x"></i></button>
+      <h2>Pick your play:</h2>
+      <button id="rock" onclick="buttonGame(1, computerSelection)">
+        <i class="far fa-hand-rock fa-5x"></i>
+      </button>
 
-        <button id="paper" onclick="buttonGame(2, computerSelection)"><i class="far fa-hand-paper fa-5x"></i></button>
+      <button id="paper" onclick="buttonGame(2, computerSelection)">
+        <i class="far fa-hand-paper fa-5x"></i>
+      </button>
 
-        <button id="scissors" onclick="buttonGame(3, computerSelection)"><i
-                class="far fa-hand-scissors fa-5x"></i></button>
+      <button id="scissors" onclick="buttonGame(3, computerSelection)">
+        <i class="far fa-hand-scissors fa-5x"></i>
+      </button>
     </section>
 
     <section>
-        <h2>Score</h2>
-        <div class="scoreSystem">
-            <p>Player:</p>
-            <p class="playerScore">0</p>
-        </div>
-        <div class="scoreSystem">
-            <p>Computer:</p>
-            <p class="computerScore">0</p>
-        </div>
-        <div class="scoreSystem">
-            <p>Tie:</p>
-            <p class="tieScore">0</p>
-        </div>
+      <h2>Score</h2>
+      <div class="scoreSystem">
+        <p>Player:</p>
+        <p class="playerScore">0</p>
+      </div>
+      <div class="scoreSystem">
+        <p>Computer:</p>
+        <p class="computerScore">0</p>
+      </div>
+      <div class="scoreSystem">
+        <p>Tie:</p>
+        <p class="tieScore">0</p>
+      </div>
     </section>
 
     <section>
-        <h2>History</h2>
-        <ul id="history">
-
-        </ul>
+      <h2>History</h2>
+      <ul id="history"></ul>
     </section>
-
-
-</body>
-
+  </body>
 </html>
